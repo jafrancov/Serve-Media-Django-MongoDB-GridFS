@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, include, url
 
-urlpatterns = patterns('image.views',
+urlpatterns = patterns('blog.views',
+                       url(r'^$', 'blog_index'),
                        )

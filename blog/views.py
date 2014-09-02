@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render_to_response
+from blog.models import *
 
-# Create your views here.
+
+def blog_index(request):
+    posts = Post.objects.all()
+    return render_to_response('index.html', {'posts': posts})
