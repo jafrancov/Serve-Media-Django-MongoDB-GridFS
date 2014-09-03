@@ -1,0 +1,10 @@
+<p><a href="/blog/">View all posts</a></p>
+
+<p><h2>{{ post.title }}</h2></p>
+<p>{{ post.body }}</p>
+{% if post.thumbnail_id %}
+<p style="text-align: center"><img src="/blog/media2/{{ post.thumbnail_id }}"></p>
+{% endif %}
+{% if post.img_id %}
+<p style="text-align: center"><img src="/blog/media2/{{ post.img_id }}"></p>
+{% endif %}
